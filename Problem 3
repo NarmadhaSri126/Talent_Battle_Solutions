@@ -1,0 +1,31 @@
+Problem Statement
+
+Get a string from the user and then change the first and last letter to uppercase.
+Input : programming
+Output: ProgramminG
+
+Solution
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String s=scan.nextLine();
+	    String ans="";
+	    char f=s.charAt(0);
+	        char l=s.charAt(s.length()-1);
+	        ans+=Character.toUpperCase(f);
+	    for(int i=1;i<s.length()-1;i++)
+      {
+            ans+=s.charAt(i);
+      }
+           ans+=Character.toUpperCase(l);
+           System.out.println(ans);
+   }
+}
+
+
+
+
+

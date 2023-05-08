@@ -1,0 +1,32 @@
+Problem statement
+  
+  Get a string from the user and find the sum of numbers in the string.
+   Input  : Hello56
+   Output : 11
+
+Solution
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String s=scan.nextLine();
+	    int sum=0;
+	    for(int i=0;i<s.length();i++){
+          if(s.charAt(i)>=48 && s.charAt(i)<=57)
+             sum=sum+Character.getNumericValue(s.charAt(i));
+        }
+          System.out.println(sum);
+	}
+}
+
+
+
+
+
+
+
+
+
+
